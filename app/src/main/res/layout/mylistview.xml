@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayout"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="1000dp"
+            android:src="@drawable/m1"
+            android:id="@+id/img"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Mi Note 9 Pro (Gold 4GB)"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/img"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/addfav"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(43,324)"
+            android:id="@+id/count"
+            android:textColor="@color/black"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/img"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:id="@+id/flipkart"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/count"
+            android:src="@drawable/flipkart"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="14,999"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/count"
+            android:layout_toRightOf="@id/img"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/offer"
+            android:textSize="15sp"
+            android:text="10% off"
+            android:layout_below="@id/count"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/price"
+            android:textColor="#42E348"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="No EMI Cost"
+            android:textColor="@color/black"
+            android:layout_below="@id/price"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
